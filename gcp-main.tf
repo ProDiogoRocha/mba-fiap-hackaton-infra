@@ -36,7 +36,7 @@ resource "google_sql_database_instance" "hackaton_my_sql" {
 
 # Criacao do banco de dados
 resource "google_sql_database" "my_sql_db" {
-  name      = "test-db"
+  name      = "${var.db_name}"
   project   = "${var.project_name}"
   instance  = "${google_sql_database_instance.hackaton_my_sql.name}"
   charset   = ""

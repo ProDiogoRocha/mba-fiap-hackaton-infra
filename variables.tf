@@ -19,3 +19,8 @@ variable db_tier {
   description = "Camada de maquina. Referencia: https://cloud.google.com/sql/pricing"
   default     = "db-f1-micro"
 }
+
+variable db_name {
+  description = "Nome do banco de dados"
+  default = "playlist"
+}
