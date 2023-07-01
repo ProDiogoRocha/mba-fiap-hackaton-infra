@@ -15,8 +15,7 @@ variable "zone" {
   default     = "us-central1-c"
 }
 
-variable "sql_create_db" {
-    description = "Criacao do DB SQL"
-    type        = string
-    default     = ""
+variable db_tier {
+  description = "Camada de maquina. Referencia: https://cloud.google.com/sql/pricing"
+  default     = "db-f1-micro"
 }
